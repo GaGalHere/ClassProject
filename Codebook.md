@@ -62,7 +62,6 @@ The following summarizes the fields in the final tidy data set:
 
 The fields resulting in the tidy data set are the fields associated with ‘mean’ and ‘standard deviation’ from the above measurements.  There are 86 measurement fields remaining in the final tidy data set:  please note that the first column indicates the order of the fields in the final tidy data set.  The second column refers to the index number of the fields name in the features.txt file.
 
-
 1.	Group.1 – resulting from the aggregate function and represents the first grouping field ‘activity’
 2.	Group.2 - resulting from the aggregate function and represents the second grouping field ‘subject’ (or volunteer participant, there were 30 in this data set)
 3.	Activity – this field is disabled once the aggregate function is run since this field was used to group the data
@@ -100,60 +99,54 @@ The fields resulting in the tidy data set are the fields associated with ‘mean
 35.	166 tBodyGyroJerk-std()-Z
 36.	201 tBodyAccMag-mean()
 37.	202 tBodyAccMag-std()
-38.	203 tBodyAccMag-mad()
-39.	204 tBodyAccMag-max()
-40.	205 tBodyAccMag-min()
-41.	214 tGravityAccMag-mean()
-42.	215 tGravityAccMag-std()
-43.	227 tBodyAccJerkMag-mean()
-44.	228 tBodyAccJerkMag-std()
-45.	240 tBodyGyroMag-mean()
-46.	241 tBodyGyroMag-std()
-47.	253 tBodyGyroJerkMag-mean()
-48.	266 fBodyAcc-mean()-X
-49.	267 fBodyAcc-mean()-Y
-50.	268 fBodyAcc-mean()-Z
-51.	269 fBodyAcc-std()-X
-52.	270 fBodyAcc-std()-Y
-53.	271 fBodyAcc-std()-Z
-54.	294 fBodyAcc-meanFreq()-X
-55.	295 fBodyAcc-meanFreq()-Y
-56.	296 fBodyAcc-meanFreq()-Z
-57.	345 fBodyAccJerk-mean()-X
-58.	346 fBodyAccJerk-mean()-Y
-59.	347 fBodyAccJerk-mean()-Z
-60.	348 fBodyAccJerk-std()-X
-61.	349 fBodyAccJerk-std()-Y
-62.	350 fBodyAccJerk-std()-Z
-63.	373 fBodyAccJerk-meanFreq()-X
-64.	374 fBodyAccJerk-meanFreq()-Y
-65.	375 fBodyAccJerk-meanFreq()-Z
-66.	424 fBodyGyro-mean()-X
-67.	425 fBodyGyro-mean()-Y
-68.	426 fBodyGyro-mean()-Z
-69.	427 fBodyGyro-std()-X
-70.	428 fBodyGyro-std()-Y
-71.	429 fBodyGyro-std()-Z
-72.	452 fBodyGyro-meanFreq()-X
-73.	453 fBodyGyro-meanFreq()-Y
-74.	454 fBodyGyro-meanFreq()-Z
-75.	503 fBodyAccMag-mean()
-76.	504 fBodyAccMag-std()
-77.	513 fBodyAccMag-meanFreq()
-78.	516 fBodyBodyAccJerkMag-mean()
-79.	517 fBodyBodyAccJerkMag-std()
-80.	526 fBodyBodyAccJerkMag-meanFreq()
-81.	529 fBodyBodyGyroMag-mean()
-82.	530 fBodyBodyGyroMag-std()
-83.	539 fBodyBodyGyroMag-meanFreq()
-84.	542 fBodyBodyGyroJerkMag-mean()
-85.	552 fBodyBodyGyroJerkMag-meanFreq()
-86.	556 angle(tBodyAccJerkMean),gravityMean)
-87.	557 angle(tBodyGyroMean,gravityMean)
-88.	558 angle(tBodyGyroJerkMean,gravityMean)
-89.	559 angle(X,gravityMean)
-90.	560 angle(Y,gravityMean)
-91.	561 angle(Z,gravityMean)
-
-
-
+38.	214 tGravityAccMag-mean()
+39.	215 tGravityAccMag-std()
+40.	227 tBodyAccJerkMag-mean()
+41.	228 tBodyAccJerkMag-std()
+42.	240 tBodyGyroMag-mean()
+43.	241 tBodyGyroMag-std()
+44.	253 tBodyGyroJerkMag-mean()
+45.	266 fBodyAcc-mean()-X
+46.	267 fBodyAcc-mean()-Y
+47.	268 fBodyAcc-mean()-Z
+48.	269 fBodyAcc-std()-X
+49.	270 fBodyAcc-std()-Y
+50.	271 fBodyAcc-std()-Z
+51.	294 fBodyAcc-meanFreq()-X
+52.	295 fBodyAcc-meanFreq()-Y
+53.	296 fBodyAcc-meanFreq()-Z
+54.	345 fBodyAccJerk-mean()-X
+55.	346 fBodyAccJerk-mean()-Y
+56.	347 fBodyAccJerk-mean()-Z
+57.	348 fBodyAccJerk-std()-X
+58.	349 fBodyAccJerk-std()-Y
+59.	350 fBodyAccJerk-std()-Z
+60.	373 fBodyAccJerk-meanFreq()-X
+61.	374 fBodyAccJerk-meanFreq()-Y
+62.	375 fBodyAccJerk-meanFreq()-Z
+63.	424 fBodyGyro-mean()-X
+64.	425 fBodyGyro-mean()-Y
+65.	426 fBodyGyro-mean()-Z
+66.	427 fBodyGyro-std()-X
+67.	428 fBodyGyro-std()-Y
+68.	429 fBodyGyro-std()-Z
+69.	452 fBodyGyro-meanFreq()-X
+70.	453 fBodyGyro-meanFreq()-Y
+71.	454 fBodyGyro-meanFreq()-Z
+72.	503 fBodyAccMag-mean()
+73.	504 fBodyAccMag-std()
+74.	513 fBodyAccMag-meanFreq()
+75.	516 fBodyBodyAccJerkMag-mean()
+76.	517 fBodyBodyAccJerkMag-std()
+77.	526 fBodyBodyAccJerkMag-meanFreq()
+78.	529 fBodyBodyGyroMag-mean()
+79.	530 fBodyBodyGyroMag-std()
+80.	539 fBodyBodyGyroMag-meanFreq()
+81.	542 fBodyBodyGyroJerkMag-mean()
+82.	552 fBodyBodyGyroJerkMag-meanFreq()
+83.	556 angle(tBodyAccJerkMean),gravityMean)
+84.	557 angle(tBodyGyroMean,gravityMean)
+85.	558 angle(tBodyGyroJerkMean,gravityMean)
+86.	559 angle(X,gravityMean)
+87.	560 angle(Y,gravityMean)
+88.	561 angle(Z,gravityMean)
