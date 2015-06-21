@@ -119,13 +119,12 @@ activity<-gsubfn(".", list("1"="WALKING","2"="WALKING_UPSTAIRS",
                  ignore.case=TRUE)
 DFdata<-cbind(activity,DFdata_prelim2)
 DFdata<-DFdata[c(-4,-5)]
-head(DFdata[c(1:7)])
 # ---------------------------------------------------------------
 # Step 4: Descriptive Variable Names, this was done in lines 6-33
 # ---------------------------------------------------------------
 # Step 5: Averages for each activity and subject
 # ---------------------------------------------------------------
 #
-table_meanspr <-aggregate(DFdata, by=list(activity,subject), 
+table_means <-aggregate(DFdata, by=list(activity,subject), 
                     FUN=mean, na.rm=TRUE)
 table_means
