@@ -41,5 +41,5 @@ the ‘test’ set was loaded first.
 the column names for the character strings ‘mean’ and ‘std’.
 19.	A final data frame was created with the activity, subject and measurement data associated with mean and standard deviation.  Dim: 10299 x 83
 20.	The activity number, 1 to 6, was replaced with its character equivalent based on the contents of activity_labels.txt.
-21.	Calculate the averages of each measurement variable for each activity and subject.  This was done using the aggregate function and grouping first by activity then by subject.  Dim: 180 x 84.  
-22. 	The resulting data frame was called table_means in R_studio.  The data frame was written as a text file projdata.txt and was uploaded to GitHub.
+21.	Calculate the averages of each measurement variable for each activity and subject.  This was done using the aggregate function and grouping first by activity then by subject.  Three fields were then removed which were redundant fields after running the aggregate function. Dim: 180 x 81.  
+22. 	The resulting data frame was called table_meansfinal in R_studio.  The data frame was written as a text file projdata.txt and was uploaded to GitHub.
