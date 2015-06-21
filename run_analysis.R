@@ -127,4 +127,5 @@ DFdata<-DFdata[c(-4,-5)]
 #
 table_means <-aggregate(DFdata, by=list(activity,subject), 
                     FUN=mean, na.rm=TRUE)
-table_means
+table_meansfinal<-table_means[c(-3,-4,-5)] 
+table_meansfinal
