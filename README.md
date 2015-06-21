@@ -12,10 +12,7 @@ The data files used for this project were obtained from the web, from the websit
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-Within the zip file above are contained several files used for this project:
-1.	features.txt – this file contains 561 field names corresponding to two data files
-2.	
-
+Within the zip file above are contained several files used for this project and noted below.
 
 Steps taken to create the tidy data set:
 1.  Load features.txt      dim:  561 x 2
@@ -45,4 +42,4 @@ the column names for the character strings ‘mean’ and ‘std’.
 19.	A final data frame was created with the activity, subject and measurement data associated with mean and standard deviation.  Dim: 10299 x 83
 20.	The activity number, 1 to 6, was replaced with its character equivalent based on the contents of activity_labels.txt.
 21.	Calculate the averages of each measurement variable for each activity and subject.  This was done using the aggregate function and grouping first by activity then by subject.  Dim: 180 x 84.  
-22. 22.	The resulting data frame was called table_means in R_studio.  The data frame was written as a text file projdata.txt and was uploaded to GitHub.
+22. 	The resulting data frame was called table_means in R_studio.  The data frame was written as a text file projdata.txt and was uploaded to GitHub.
