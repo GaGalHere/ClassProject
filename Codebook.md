@@ -149,9 +149,3 @@ NOTE:  The mean of the following variables is given in the projdata.txt file
 83.	559 angle(X,gravityMean)
 84.	560 angle(Y,gravityMean)
 85.	561 angle(Z,gravityMean)
-
-84.	557 angle(tBodyGyroMean,gravityMean)
-85.	558 angle(tBodyGyroJerkMean,gravityMean)
-86.	559 angle(X,gravityMean)
-87.	560 angle(Y,gravityMean)
-88.	561 angle(Z,gravityMean)
